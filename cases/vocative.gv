@@ -1,0 +1,52 @@
+digraph vocative_case {
+	node [shape = box];
+	/* nodes */
+	START				[label="PROPER NOUN", style="rounded, bold"];
+	first_letter		[label="What letter group does the word begin with?"];
+	vowel_group			[label="a, e, i, o, u"];
+	f_group				[label="f"];
+	lenition_group		[label="b, c, d, f, g, m, p, s, t"];
+	non_lenition_group	[label="l, n, r, sg, sm, sp, st"];
+	do_not_lenite		[label="Do not lenite."];
+	lenite				[label="Lenite."];
+	add_particle_1	    [label="Add vocative particle."];
+	add_particle_2	    [label="Add vocative particle."];
+	drop_particle_1		[label="Drop vocative particle."];
+	drop_particle_2		[label="Drop vocative particle."];
+	gender				[label="What is the grammatical gender?"];
+	feminine			[label="Feminine"];
+	masculine			[label="Masculine"];
+	last_syllable		[label="Is the last syllable slender or broad?"];
+	slender				[label="Slender\ne, i"];
+	broad				[label="Broad\na, o, u"];
+	slenderise			[label="Slenderise last syllable."];
+	FINISH			    [label="FINISH", style="rounded, bold"];
+	/* graph */
+	START -> first_letter;
+	first_letter -> vowel_group;
+	first_letter -> f_group;
+	first_letter -> lenition_group;
+	first_letter -> non_lenition_group;
+	vowel_group -> drop_particle_1;
+	f_group -> drop_particle_2;
+	lenition_group -> add_particle_1;
+	non_lenition_group -> add_particle_2;
+	drop_particle_1 -> do_not_lenite;
+	drop_particle_2 -> lenite;
+	add_particle_1 -> lenite;
+	add_particle_2 -> do_not_lenite;
+	lenite -> gender;
+	do_not_lenite -> gender;
+	gender -> feminine;
+	feminine -> FINISH;
+	gender -> masculine;
+	masculine -> last_syllable;
+	last_syllable -> slender;
+	last_syllable -> broad;
+	slender -> FINISH;
+	broad -> slenderise;
+	slenderise -> FINISH;
+	/* layout */
+	{rank=same; feminine, masculine}
+	{rank=same; slender, broad}
+}
