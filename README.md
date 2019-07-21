@@ -6,10 +6,17 @@ A set of diagrams depicting grammar, word formation and spelling rules for Scott
 The diagrams are created using GraphViz:  
 https://graphviz.org
 
+To generate a diagram use something like:  
+```
+dot -Tpng *filename.gv* -o *outputname.png*
+```
+
 At present this project is in the very early stages and the diagrams should not be treated as authoritative.
 
-For a more comprehensive guide to Scottish Gaelic grammar see:  
-https://learngaelic.scot  
-https://gaelicgrammar.org
+References for Scottish Gaelic grammar:  
+Michel Byrne (2004) *Gràmma na Gàidhlig*. Cearsiadar: Stòrlann-Acair  
+https://gaelicgrammar.org  
+
+
 
 
