@@ -17,6 +17,12 @@ class DiagramRenderer():
 		edge = self.graph.get_edge(nodeA, nodeB)
 		edge.attr['style'] = 'bold'
 
+	def highlight_path(self, nodelist):
+		for index, node in nodelist[:-1]:
+			self.highlight_node(node)
+			self.highlight_edge(node, nodelist[index+1])
+		self.highlight_node(nodelist[-1])
+
 	def write(self, filename):
 		if filename.endswith('.dot'):
 			self.graph.write(filename)
