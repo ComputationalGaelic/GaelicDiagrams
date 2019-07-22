@@ -8,7 +8,7 @@ https://graphviz.org
 
 To render a diagram use something like:  
 ```
-dot -Tpng *filename.dot* -o *outputname.png*
+dot -Tpng filename.dot -o outputname.png
 ```
 
 At present this project is in the very early stages and the diagrams should not be treated as authoritative.
