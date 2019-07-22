@@ -1,4 +1,4 @@
-# gaelic_diagrams.render
+# gaelic_diagrams.utils.render
 
 # pygraphviz
 import pygraphviz
