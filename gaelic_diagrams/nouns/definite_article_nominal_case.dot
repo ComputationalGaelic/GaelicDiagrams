@@ -9,15 +9,17 @@ digraph definite_article_nominal_case {
 	first_letter_m		[label="What letter group does the word begin with?"];
 	bfmp_group_m		[label="b, f, m, p"];
 	vowel_group_f		[label="a, e, i, o, u"];
+	f_group_f		    [label="f"];
 	vowel_group_m		[label="a, e, i, o, u"];
 	consonants_group_m  [label="c, d, g, l, n, r, s, t\n(all other consonants)"];
-	lenition_group		[label="b, c, d, f, g, m, p, t"];
+	lenition_group		[label="b, c, d, g, m, p, t"];
 	non_lenition_group	[label="l, n, r, sg, sm, sp, st"];
 	lenition_s			[label="s\n(allows lenition)"];
 	article_am_m        [label=<am <i>NOUN</i>>, style="rounded, bold"];
 	article_an_m        [label=<an <i>NOUN</i>>, style="rounded, bold"];
 	article_an_t_m      [label=<an t-<i>NOUN</i>>, style="rounded, bold"];
 	article_an_f        [label=<an <i>NOUN</i>>, style="rounded, bold"];
+	article_an_h_f      [label=<an <i>NOUN (lenited)</i>>, style="rounded, bold"];
 	article_an_t_f      [label=<an t-<i>NOUN</i>>, style="rounded, bold"];
 	article_a_h         [label=<a' <i>NOUN (lenited)</i>>, style="rounded, bold"];
 	/* graph */
@@ -35,10 +37,12 @@ digraph definite_article_nominal_case {
 	gender -> feminine;
 	feminine -> first_letter_f;
 	first_letter_f -> vowel_group_f;
+	first_letter_f -> f_group_f;
 	first_letter_f -> lenition_group;
 	first_letter_f -> non_lenition_group;
 	first_letter_f -> lenition_s;
 	vowel_group_f -> article_an_f;
+	f_group_f -> article_an_h_f;
 	lenition_group -> article_a_h;
 	non_lenition_group -> article_an_f;
 	lenition_s -> article_an_t_f;
