@@ -1,4 +1,4 @@
-digraph definite_article_nominal_case_singular {
+digraph definite_article_nominative_case_singular {
 	node [shape = box];
 	/* nodes */
 	START				[label="NOUN", style="rounded, bold"];
