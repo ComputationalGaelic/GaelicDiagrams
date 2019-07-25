@@ -1,6 +1,5 @@
 digraph grammatical_gender {
 	node [shape = box];
-	splines="line";
 	/* nodes */
 	START				[label="NOUN", style="rounded, bold"];
 	known_gender        [label="Is gender defined by role or usage?"];
@@ -27,7 +26,7 @@ digraph grammatical_gender {
 	known_gender_y -> languages_countries;
 	known_gender_y -> defined_m;
 	defined_f -> FEMININE;
-	languages_countries -> MASCULINE;
+	languages_countries -> FEMININE;
 	defined_m -> MASCULINE;
 	known_gender -> known_gender_n;
 	known_gender_n -> final_syllable;
