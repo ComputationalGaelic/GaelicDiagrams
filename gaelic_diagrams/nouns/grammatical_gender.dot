@@ -1,20 +1,21 @@
 digraph grammatical_gender {
 	node [shape = box];
+	splines="line";
 	/* nodes */
 	START				[label="NOUN", style="rounded, bold"];
-	known_gender        [label="Is gender is defined by role or usage?"];
+	known_gender        [label="Is gender defined by role or usage?"];
 	known_gender_y      [label="Yes"];
 	known_gender_n      [label="No"];
 	defined_f			[label="Defined as feminine?"];
 	defined_m			[label="Defined as masculine?"];
-	languages_countries [label="Is noun the name of a language or country?"];
-	final_syllable      [label="What is the final syllable?\n(For words of more than one syllable)"];
+	languages_countries [label="Is the noun the name of\na language or country?"];
+	final_syllable      [label="What is the final syllable?"];
 	endings_f			[label="-ag, -achd, -id"];
 	endings_m			[label="-ach, -adh, -an, -as"];
-	job_or_function     [label="Is noun the name of a job or function?"];
+	job_or_function     [label="Is the noun the name\nof a job or function?"];
 	job_final_syllable  [label="What is the final syllable?"];
 	job_ending_m        [label="-ir, -iche"];
-	broad_slender       [label="Is the final syllable broad or slender?"];
+	broad_slender       [label="Is the final syllable\nbroad or slender?"];
 	slender				[label="Slender\ne, i"];
 	broad				[label="Broad\na, o, u"];
 	FEMININE		    [label="FEMININE", style="rounded, bold"];
