@@ -1,0 +1,53 @@
+digraph grammatical_gender {
+	node [shape = box];
+	/* nodes */
+	START				[label="NOUN", style="rounded, bold"];
+	known_gender        [label="Is gender is defined by role or usage?"];
+	known_gender_y      [label="Yes"];
+	known_gender_n      [label="No"];
+	defined_f			[label="Defined as feminine?"];
+	defined_m			[label="Defined as masculine?"];
+	languages_countries [label="Is noun the name of a language or country?"];
+	final_syllable      [label="What is the final syllable?\n(For words of more than one syllable)"];
+	endings_f			[label="-ag, -achd, -id"];
+	endings_m			[label="-ach, -adh, -an, -as"];
+	job_or_function     [label="Is noun the name of a job or function?"];
+	job_final_syllable  [label="What is the final syllable?"];
+	job_ending_m        [label="-ir, -iche"];
+	broad_slender       [label="Is the final syllable broad or slender?"];
+	slender				[label="Slender\ne, i"];
+	broad				[label="Broad\na, o, u"];
+	FEMININE		    [label="FEMININE", style="rounded, bold"];
+	MASCULINE		    [label="MASCULINE", style="rounded, bold"];
+	/* graph */
+	START -> known_gender;
+	known_gender -> known_gender_y;
+	known_gender_y -> defined_f;
+	known_gender_y -> languages_countries;
+	known_gender_y -> defined_m;
+	defined_f -> FEMININE;
+	languages_countries -> MASCULINE;
+	defined_m -> MASCULINE;
+	known_gender -> known_gender_n;
+	known_gender_n -> final_syllable;
+	final_syllable -> endings_f;
+	endings_f -> FEMININE;
+	final_syllable -> endings_m;
+	endings_m -> MASCULINE;
+	known_gender_y -> job_or_function;
+	job_or_function -> job_final_syllable;
+	job_final_syllable -> job_ending_m;
+	job_ending_m -> MASCULINE;
+	job_final_syllable -> broad_slender;
+	final_syllable -> broad_slender;
+	broad_slender -> slender;
+	broad_slender -> broad;
+	slender -> FEMININE;
+	broad -> MASCULINE;
+	/* layout */
+	{rank=same; known_gender_y, known_gender_n}
+	{rank=same; defined_f, defined_m, languages_countries, final_syllable, job_or_function}
+	{rank=same; endings_f, endings_m}
+	{rank=same; slender, broad}
+	{rank=same; FEMININE, MASCULINE}
+}
