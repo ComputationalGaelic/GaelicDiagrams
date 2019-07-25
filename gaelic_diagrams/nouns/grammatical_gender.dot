@@ -34,7 +34,7 @@ digraph grammatical_gender {
 	endings_f -> FEMININE;
 	final_syllable -> endings_m;
 	endings_m -> MASCULINE;
-	known_gender_y -> job_or_function;
+	known_gender_n -> job_or_function;
 	job_or_function -> job_final_syllable;
 	job_final_syllable -> job_ending_m;
 	job_ending_m -> MASCULINE;
