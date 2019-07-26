@@ -3,13 +3,14 @@ Gaelic Diagrams
 
 A set of diagrams depicting grammar, word formation and spelling rules for Scottish Gaelic.
 
-The diagrams are created using GraphViz:  
-https://graphviz.org
+The diagrams are created using GraphViz: https://graphviz.org
 
 To render a diagram use something like:  
 ```
 dot -Tpng filename.dot -o outputname.png
 ```
+Example diagrams can be viewed on the project wiki:  
+https://github.com/ComputationalGaelic/GaelicDiagrams/wiki
 
 At present this project is in the very early stages and the diagrams should not be treated as authoritative.
 
