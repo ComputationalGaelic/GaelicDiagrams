@@ -2,27 +2,27 @@ digraph possessive_article {
 	rankdir=LR;
 	node [shape = box];
 	/* nodes */
-	START						[label="PERSONAL PRONOUN + NOUN", style="rounded, bold"];
-	what_pronoun				[label="What is the pronoun?"];
-	first_person_singular		[label="mo\nFirst person singular"];
-	second_person_singular		[label="do\nSecond person singular"];
-	third_person_singular_m		[label="a\nThird person singular - male"];
-	third_person_singular_f		[label="a\nThird person singular - female"];
-	first_person_plural			[label="ar\nFirst person plural"];
-	second_person_plural		[label="ur\nSecond person plural"];
-	third_person_plural			[label="an\nThird person plural"];
-	first_letter_singular		[label="What letter group\ndoes the noun\nbegin with?"];
-	first_letter_plural			[label="What letter group\ndoes the noun\nbegin with?"];
-	first_letter_plural_third	[label="What letter group\ndoes the noun\nbegin with?"];
-	vowel_group_singular		[label="a, e, i, o, u"];
-	f_group		    			[label="f"];
-	non_lenition_group			[label="l, n, r, sg, sm, sp, st\n(non-lenition)"];
-	lenition_group				[label="b, c, d, g, m, p, t\n(lenition)"];
-	vowel_group_plural			[label="a, e, i, o, u"];
-	all_consonants				[label="b, c, d, f, g, l, m, n, p, r, s, t\n(all consonants)"];
-	vowel_group_plural_third	[label="a, e, i, o, u"];
-	bfmp_group					[label="b, f, m, p"];
-	all_other_consonants		[label="c, d, g, l, n, r, s, t\n(all other consonants)"];
+	START							[label="PERSONAL PRONOUN + NOUN", style="rounded, bold"];
+	what_pronoun					[label="What is the pronoun?"];
+	first_person_singular			[label="mo\nFirst person singular"];
+	second_person_singular			[label="do\nSecond person singular"];
+	third_person_singular_m			[label="a\nThird person singular - male"];
+	third_person_singular_f			[label="a\nThird person singular - female"];
+	first_person_plural				[label="ar\nFirst person plural"];
+	second_person_plural			[label="ur\nSecond person plural"];
+	third_person_plural				[label="an\nThird person plural"];
+	first_letter_singular			[label="What letter group\ndoes the noun\nbegin with?"];
+	first_letter_plural				[label="What letter group\ndoes the noun\nbegin with?"];
+	first_letter_plural_third		[label="What letter group\ndoes the noun\nbegin with?"];
+	vowel_group_singular			[label="a, e, i, o, u"];
+	f_group		    				[label="f"];
+	non_lenition_group				[label="l, n, r, sg, sm, sp, st\n(non-lenition)"];
+	lenition_group					[label="b, c, d, g, m, p, t\n(lenition)"];
+	vowel_group_plural				[label="a, e, i, o, u"];
+	all_consonants					[label="b, c, d, f, g, l, m, n, p, r, s, t\n(all consonants)"];
+	vowel_group_plural_third		[label="a, e, i, o, u"];
+	bfmp_group						[label="b, f, m, p"];
+	all_other_consonants			[label="c, d, g, l, n, r, s, t\n(all other consonants)"];
 	first_person_singular_vowel		[label=<m’ <i>NOUN</i> >, style="rounded, bold"];
 	first_person_singular_f			[label=<m’ <i>NOUN (lenited)</i> >, style="rounded, bold"];
 	first_person_singular_nonlen	[label=<mo <i>NOUN</i> >, style="rounded, bold"];
@@ -39,6 +39,12 @@ digraph possessive_article {
 	third_person_singular_f_f		[label=<a h-<i>NOUN (lenited)</i><br/>female >, style="rounded, bold"];
 	third_person_singular_nonlen_f	[label=<a <i>NOUN</i><br/>female >, style="rounded, bold"];
 	third_person_singular_len_f		[label=<a <i>NOUN</i><br/>female >, style="rounded, bold"];
+	first_person_plural_vowel		[label=<ar n-<i>NOUN</i>>, style="rounded, bold"];
+	first_person_plural_consonant	[label=<ar <i>NOUN</i>>, style="rounded, bold"];
+	second_person_plural_vowel		[label=<ur n-<i>NOUN</i>>, style="rounded, bold"];
+	second_person_plural_consonant	[label=<ur <i>NOUN</i>>, style="rounded, bold"];
+	third_person_plural_an			[label=<an <i>NOUN</i>>, style="rounded, bold"];
+	third_person_plural_am			[label=<am <i>NOUN</i>>, style="rounded, bold"];
 	/* graph */
 	START -> what_pronoun;
 	what_pronoun -> {
@@ -85,6 +91,14 @@ digraph possessive_article {
 		vowel_group_plural,
 		all_consonants
 	}
+	vowel_group_plural -> {
+		first_person_plural_vowel,
+		second_person_plural_vowel
+	}
+	all_consonants -> {
+		first_person_plural_consonant,
+		second_person_plural_consonant
+	}
 	what_pronoun -> third_person_plural;
 	third_person_plural -> first_letter_plural_third
 	first_letter_plural_third -> {
@@ -92,6 +106,9 @@ digraph possessive_article {
 		bfmp_group,
 		all_other_consonants
 	}
+	vowel_group_plural_third -> third_person_plural_an;
+	all_other_consonants -> third_person_plural_an;
+	bfmp_group -> third_person_plural_am;
 	/* layout */
 	{rank=same; 
 		first_person_singular, 
