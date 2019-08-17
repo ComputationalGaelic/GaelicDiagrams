@@ -1,0 +1,39 @@
+digraph verbal_noun_plus_noun {
+	node [shape = box];
+	/* nodes */
+	START				[label="VERBAL NOUN + NOUN", style="rounded, bold"];
+	article				[label="Is the noun definite or indefinite?"];
+	definite			[label="Definite"];
+	indefinite			[label="Indefinite"];
+	def_sing_pl			[label="Is the noun singular or pural?"];
+	ind_sing_pl			[label="Is the noun singular or pural?"];
+	def_singular		[label="Singular"];
+	def_plural			[label="Plural"];
+	ind_singular		[label="Singular"];
+	ind_plural			[label="Plural"];
+	def_singular_art	[label=< an/am <i>NOUN</i> (genitive) >, style="rounded, bold"];
+	def_plural_art		[label=< nan/nam <i>NOUN</i> (genitive) >, style="rounded, bold"];
+	ind_singular_art	[label=< <i>NOUN</i> (nominative) >, style="rounded, bold"];
+	ind_plural_art		[label=< <i>NOUN</i> (genitive, lenited) >, style="rounded, bold"];
+
+	/* graph */
+	START -> article;
+	article -> {
+		definite,
+		indefinite
+	}
+	definite -> def_sing_pl;
+	indefinite -> ind_sing_pl;
+	def_sing_pl -> {
+		def_singular,
+		def_plural
+	}
+	def_singular -> def_singular_art;
+	def_plural -> def_plural_art;
+	ind_sing_pl -> {
+		ind_singular,
+		ind_plural
+	}
+	ind_singular -> ind_singular_art;
+	ind_plural -> ind_plural_art;
+}
