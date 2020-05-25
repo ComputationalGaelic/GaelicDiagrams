@@ -7,11 +7,11 @@ Vowel Groups: *Caol ri Caol ’s Leathann ri Leathann*
 
 Vowels in Gaelic divide into two groups: the *broad* vowels -- a, o, u -- and the *slender* vowels -- e, i.
 
-**diagram**
+.. graphviz:: ../gaelic_diagrams/spelling/vowel_groups.dot
 
 In a word, the vowels on either side of a consonant will normally be from the same group. This rule is known as *Caol ri Caol ’s Leathann ri Leathann* -- Broad with Broad and Slender with Slender -- and is one of the most basic spelling rules governing the language.
 
-**diagram**
+.. graphviz:: ../gaelic_diagrams/spelling/broad_slender.dot
 
 There are some exceptions to this as when the emphatic endings, *sa*, *-se* and *esan*, are applied: **example**.
 

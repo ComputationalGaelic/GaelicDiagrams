@@ -1,0 +1,16 @@
+digraph broad_slender {
+	node [shape = box];
+	/* nodes */
+	broad_1				[label="Broad\na, o, u", style="rounded, bold"];
+	broad_2				[label="Broad\na, o, u", style="rounded, bold"];
+	slender_1			[label="Slender\ne, i", style="rounded, bold"];
+	slender_2			[label="Slender\ne, i", style="rounded, bold"];
+	consonants_b        [label="Consonant(s)"];
+	consonants_s        [label="Consonant(s)"];
+	/* graph */
+	broad_1 -> consonants_b -> broad_2;
+	slender_1 -> consonants_s -> slender_2;
+	/* layout */
+	{rank=same; broad_1, consonants_b, broad_2}
+	{rank=same; slender_1, consonants_s, slender_2}
+}

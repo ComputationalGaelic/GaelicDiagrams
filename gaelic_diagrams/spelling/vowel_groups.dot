@@ -1,0 +1,20 @@
+digraph vowel_groups {
+	node [shape = box];
+	/* nodes */
+	all_vowels			[label="a, e, i, o, u"];
+	broad				[label="Broad", style="bold"];
+	slender				[label="Slender", style="bold"];
+	a					[label="a"];
+	e					[label="e"];
+	i					[label="i"];
+	o					[label="o"];
+	u					[label="u"];
+	/* graph */
+	all_vowels -> broad;
+	all_vowels -> slender;
+	broad -> {a, o, u};
+	slender -> {e, i};
+	/* layout */
+	{rank=same; broad, slender}
+	{rank=same; a, e, i, o , u}
+}
