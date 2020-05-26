@@ -1,0 +1,28 @@
+digraph vowels_long_short {
+	graph [compound=true];
+	node [shape = box];
+	rankdir=LR;
+	/* nodes */
+	subgraph cluster_0 {
+        label="Short";
+        a_short				[label="a"];
+		e_short				[label="e"];
+		i_short				[label="i"];
+		o_short				[label="o"];
+		u_short				[label="u"];
+    }
+    subgraph cluster_1 {
+        label="Long";
+        a_long				[label="à"];
+		e_long				[label="è"];
+		i_long				[label="ì"];
+		o_long				[label="ò"];
+		u_long				[label="ù"];
+    }
+    /* graph */
+	a_short -> a_long;
+	e_short -> e_long;
+	i_short -> i_long;
+	o_short -> o_long;
+	u_short -> u_long;
+}

@@ -1,4 +1,4 @@
-digraph broad_slender {
+digraph vowels_broad_slender {
 	node [shape = box];
 	/* nodes */
 	broad_1				[label="Broad\na, o, u", style="rounded, bold"];

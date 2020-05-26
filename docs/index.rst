@@ -11,7 +11,6 @@ Gaelic Grammar Diagrams
    :caption: Contents:
 
    introduction
-   examples
    spelling
 
 
