@@ -2,6 +2,8 @@
 Spelling
 ========
 
+.. index:: spelling
+
 Vowel Groups: *Caol ri Caol ’s Leathann ri Leathann*
 ----------------------------------------------------
 
@@ -39,10 +41,22 @@ https://www.faclair.com/ViewEntry.aspx?ID=BD16744819E815FCB14689CACC858642
 Consonant Groups
 ----------------
 
+.. index:: consonants
+
 Gaelic does not require all of the consonants of the standard Latin alphabet. The letters j, k, q, v, w, x, y and z are not used. The *aibidil*, the Gaelic alphabet, consists of 18 letters, the five vowels and thirteen consonants: b, c, d, f, g, h, l, m, n, p, r, s, t.
 
 .. graphviz:: ../gaelic_diagrams/spelling/gaelic_consonants.dot
 	:caption: Gaelic consonants.
+
+The consonants can be divided into different groups related to pronunciation and spelling rules.
+
+.. graphviz:: ../gaelic_diagrams/spelling/consonant_groups.dot
+	:caption: Gaelic consonants.
+
+The main division is determined by *lenition*, a pronunciation change through which certain consonants are softened. There are two main groups within those consonants that lenite, those that take the letter ‘h’ and those that do not. The group ‘sg sm sp st’ do not lenite at all. The letter ‘h’ is effectively a group in itself as it is never used as a letter on its own in Gaelic. Lenition is described in greater detail below. 
+
+A smaller distinction lies with the group ‘b f m p’. When these letters are found at the start of a word and are preceded by the definite article or a connective that ends in ‘n’, the ‘n’ becomes ‘m’ -- *an* becomes *am* and *gun* becomes *gum*. This is also described in greater detail below.
+
 
 References
 ++++++++++
@@ -53,10 +67,15 @@ https://en.wikipedia.org/wiki/Scottish_Gaelic_orthography
 Slenderising
 ------------
 
+.. index:: slenderising
+
+
 *An* to *Am*
 ------------
 
 Lenition
 --------
+
+.. index:: lenition
 
 

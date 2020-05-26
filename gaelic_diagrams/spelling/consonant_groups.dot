@@ -1,0 +1,35 @@
+digraph consonant_groups {
+	node [shape = box];
+	/* nodes */
+	consonants			[label="b c d f g h l m n p r s t"];
+	bfmp_group			[label="b f m p"];
+	lenition_group_a	[label="b c d f g m p s t"];
+	lenition_group_b	[label="l n r"];
+	non_lenition_group	[label="sg sm sp st"];
+	h_group				[label="h"];
+	lenition_rule_h		[label=<Lenition with <i>h</i>>, style="rounded"];
+	lenition_rule_no_h	[label=<Lenition without <i>h</i>>, style="rounded"];
+	no_lenition_rule	[label="No lenition", style="rounded"];
+	an_am_rule			[label=<<i>an</i> becomes <i>am</i>>, style="rounded"];
+	lenition_digraphs	[label="bh ch dh fh gh mh ph sh th"];
+	other_digraph_group	[label="ll nn ng rr"];
+	
+
+	/* graph */
+	consonants -> lenition_group_a;
+	consonants -> h_group;
+	consonants -> lenition_group_b;
+	consonants -> no_lenition_rule;
+	consonants -> an_am_rule;
+	lenition_group_a -> lenition_rule_h;
+	h_group -> lenition_rule_h;
+	lenition_rule_h -> lenition_digraphs;
+	lenition_group_b -> lenition_rule_no_h;
+	lenition_rule_no_h -> other_digraph_group;
+	no_lenition_rule -> non_lenition_group;
+	an_am_rule -> bfmp_group;
+	/* layout */
+	{rank=same; lenition_group_a, h_group, lenition_group_b}
+	{rank=same; lenition_rule_h, lenition_rule_no_h, no_lenition_rule, an_am_rule}
+	{rank=same; lenition_digraphs, other_digraph_group, non_lenition_group, bfmp_group}
+}
