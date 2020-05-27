@@ -15,9 +15,4 @@ Gaelic Grammar Diagrams
 
 
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

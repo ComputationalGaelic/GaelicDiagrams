@@ -4,6 +4,37 @@ Spelling
 
 .. index:: spelling
 
+The Gaelic Alphabet: *Aibidil*
+------------------------------
+
+.. index:: alphabet
+
+The *aibidil*, the Gaelic alphabet, consists of 18 letters, the five vowels and thirteen consonants: b, c, d, f, g, h, l, m, n, p, r, s, t. Traditionally, the letters of the Gaelic alphabet are each identified with a specific tree whose name relates to the sound of the letter.
+
+================ ===============
+Letter (*Litir*) Tree (*Croabh*)
+================ ===============
+a                Ailm (Elm)
+b                Beith (Birch)
+c                Coll (Hazel)
+d                Dair (Oak)
+e                Eadha (Aspen)
+f                Feàrn (Alder)
+g                Gort (Ivy)
+h                Uath (Hawthorn)
+i                Iogh (Yew)
+l                Luis (Rowan)
+m                Muin (Vine)
+n                Nuin (Ash)
+o                Onn (Gorse)
+p                Peith Bhog (Birch)
+r                Ruis (Elder)
+s                Suil (Willow)
+t                Teine (Gorse)
+u                Ur (Yew)
+================ ===============
+
+
 Vowel Groups: *Caol ri Caol ’s Leathann ri Leathann*
 ----------------------------------------------------
 
@@ -43,7 +74,7 @@ Consonant Groups
 
 .. index:: consonants
 
-Gaelic does not require all of the consonants of the standard Latin alphabet. The letters j, k, q, v, w, x, y and z are not used. The *aibidil*, the Gaelic alphabet, consists of 18 letters, the five vowels and thirteen consonants: b, c, d, f, g, h, l, m, n, p, r, s, t.
+Gaelic does not require all of the consonants of the standard Latin alphabet. The letters j, k, q, v, w, x, y and z are not used.  
 
 .. graphviz:: ../gaelic_diagrams/spelling/gaelic_consonants.dot
 	:caption: Gaelic consonants.
@@ -62,6 +93,8 @@ References
 ++++++++++
 
 https://en.wikipedia.org/wiki/Scottish_Gaelic_orthography
+
+https://gaelicgrammar.org/~gaelic/mediawiki/index.php/Orthography
 
 
 Slenderising
