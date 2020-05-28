@@ -1,0 +1,22 @@
+digraph consonants_bfmp {
+	graph [compound=true];
+	node [shape = box];
+	rankdir=LR;
+	/* nodes */
+	subgraph cluster_0 {
+		style=filled;
+        color=white;
+		n_group		[label="an\nann an\ngun\nnan"];
+		others		[label="a\nc\nd\ne\ng\nh\ni\nl\nn\no\nr\ns\nt\nu"];
+		n_group -> others;
+	}
+	subgraph cluster_1 {
+		style=filled;
+        color=white;
+		m_group		[label="am\nann am\ngum\nnam"];
+		bfmp		[label="b\nf\nm\np"];
+		m_group -> bfmp;
+	}
+	/* for alignment */
+	others -> m_group [style = invis];
+}

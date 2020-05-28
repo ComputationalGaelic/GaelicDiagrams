@@ -1,0 +1,32 @@
+digraph consonants_slenderising {
+	graph [compound=true];
+	node [shape = box];
+	rankdir=LR;
+	/* nodes */
+	subgraph cluster_0 {
+        label="Broad";
+        balach				[label="balach"];
+		eun					[label="eun"];
+		cas					[label="cas"];
+		dòmhnall			[label="Dòmhnall"];
+    }
+    subgraph cluster_1 {
+    	label="Grammatical Change";
+        balach_rule			[label="plural", style="rounded"];
+		eun_rule			[label="plural", style="rounded"];
+		cas_rule			[label="Genitive Case", style="rounded"];
+		dòmhnall_rule		[label="Vocative Case", style="rounded"];
+    }
+    subgraph cluster_2 {
+        label="Slenderised";
+        balaich				[label="balaich"];
+		eòin				[label="eòin"];
+		coise				[label="coise"];
+		dhòmhnaill			[label="Dhòmhnaill"];
+    }
+    /* graph */
+	balach -> balach_rule -> balaich;
+	eun -> eun_rule -> eòin;
+	cas -> cas_rule -> coise;
+	dòmhnall -> dòmhnall_rule -> dhòmhnaill;
+}
