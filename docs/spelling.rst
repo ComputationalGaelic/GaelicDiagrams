@@ -97,10 +97,20 @@ https://en.wikipedia.org/wiki/Scottish_Gaelic_orthography
 https://gaelicgrammar.org/~gaelic/mediawiki/index.php/Orthography
 
 
-Slenderising
-------------
+Slenderising: *caoileachadh*
+----------------------------
 
 .. index:: slenderising
+
+Certain consonants in Gaelic will change in pronunciation depending on whether they are accompanied by a broad or slender vowel. **examples**
+
+Words ending with broad vowels will sometimes change to ending with a slender vowel for grammatical reasons. For example, *balach*, the singular for boy, will become *balaich* in the plural. This change is known as slenderising (*caoileachadh*). It may take the form of a slender vowel being added to the existing vowels of the final syllable, as in *balaich*, or in the vowels changing completely, such as *eun*, for bird, which becomes *eòin* in the plural. As well as when certain nouns become plural, slenderising can also happen when a man’s name is used in the Vocative Case, i.e. *Dòmhnall* becomes *a Dhòmhnaill*, or for nouns used in the Genitive Case as when *cas*, foot, becomes *coise* as in *ball-coise*, football.
+
+
+References
+++++++++++
+
+https://cuhwc.org.uk/page/unofficial-guide-pronouncing-gaelic
 
 
 *An* to *Am*
