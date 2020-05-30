@@ -107,6 +107,23 @@ https://gaelicgrammar.org/~gaelic/mediawiki/index.php/Orthography
 
     \clearpage
 
+Phoneme Groups: *Fuaimean*
+--------------------------
+
+Gaelic can also be divided up into distinct phoneme groups. These form the most common building blocks for Gaelic words.
+
+.. graphviz:: ../gaelic_diagrams/spelling/phoneme_groups_vowels.dot
+	:caption: Vowel phoneme groups in Gaelic.
+
+.. graphviz:: ../gaelic_diagrams/spelling/phoneme_groups_consonants.dot
+	:caption: Consonant phoneme groups in Gaelic.
+
+References
+++++++++++
+
+Ionad Chaluim Chille Ìle (2003). **Gaelic Phonics Study Report**. Stòrlann Nàiseanta Na Gàidhlig.
+
+
 B, F, M and P: *An* to *Am*
 ---------------------------
 

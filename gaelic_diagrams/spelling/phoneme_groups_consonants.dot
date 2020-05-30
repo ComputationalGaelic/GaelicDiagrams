@@ -1,0 +1,39 @@
+digraph phoneme_groups_consonants {
+	graph [compound=true, ranksep="0.25"];
+	node [shape = box];
+	rankdir=TB;
+	/* nodes */
+	subgraph cluster_0 {
+		label="Lenited Consonants";
+		edge [arrowhead=none];
+		th -> mh -> sh;
+		bh -> ch;
+		dh -> gh -> ph -> fh;
+	}
+	subgraph cluster_1 {
+		label="Consonants ending with ‘r’";
+		edge [arrowhead=none];
+		br -> cr -> dr -> gr -> pr -> sr -> tr;
+		bhr -> chr -> phr -> thr -> shr;
+	}
+	subgraph cluster_2 {
+		label="Consonants starting with ‘s’";
+		edge [arrowhead=none];
+		sg -> sl -> sm -> sn -> sp -> st -> sgr;
+	}
+	subgraph cluster_3 {
+		label="Consonants ending with ‘l’ and ‘n’";
+		edge [arrowhead=none];
+		bl -> cl -> gl -> cn -> gn;
+		bhl -> chl -> ghl -> phl -> shl -> chn -> ghn;
+	}
+	subgraph cluster_4 {
+		label="Other Consonants";
+		edge [arrowhead=none];
+		sgB [label="sg"];
+		stB [label="st"];
+		lc -> lt -> rp -> rn -> rs -> sgB -> stB -> chd;
+	}
+	/* for alignment */
+	//others -> m_group [style = invis];
+}

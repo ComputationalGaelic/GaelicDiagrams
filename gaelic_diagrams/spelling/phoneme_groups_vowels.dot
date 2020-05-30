@@ -1,0 +1,26 @@
+digraph phoneme_groups_vowels {
+	graph [compound=true, ranksep="0.25"];
+	node [shape = box];
+	rankdir=TB;
+	/* nodes */
+	subgraph cluster_0 {
+		label="Vowels Group A";
+		edge [arrowhead=none];
+		ò -> ù -> ao -> ua;
+		e -> i -> ì;
+		ai -> ài -> oi -> òi;
+		ui -> ùi;
+		ei -> è -> èi;
+	}
+	subgraph cluster_1 {
+		label="Vowels Group B";
+		edge [arrowhead=none];
+		io -> ia -> ìo;
+		aoi -> uai -> èoi -> eu -> ea;
+	}
+	subgraph cluster_2 {
+		label="Vowel-Consonant Group";
+		edge [arrowhead=none];
+		idh -> "-aidh";
+	}
+}
