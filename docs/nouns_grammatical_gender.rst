@@ -1,6 +1,6 @@
-======================================
-Nouns and Gender: *Ainmearan agus Gnè*
-======================================
+=========================
+Grammatical Gender: *Gnè*
+=========================
 
 .. index:: nouns, gender
 
@@ -14,3 +14,7 @@ The main division of words be gender, however, is not related to social conventi
 .. graphviz:: ../gaelic_diagrams/nouns/grammatical_gender.dot
 	:caption: Grammatical gender in Gaelic.
 
+References
+++++++++++
+
+https://en.wikipedia.org/wiki/Grammatical_gender

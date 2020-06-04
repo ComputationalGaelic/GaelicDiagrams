@@ -1,6 +1,6 @@
-====================================================
-Spelling and Phonemes: *Litrichean agus Litreachadh*
-====================================================
+=======================
+Spelling: *Litreachadh*
+=======================
 
 .. index:: spelling
 
@@ -138,6 +138,16 @@ For words beginning with the letters **b**, **f**, **m** or **p**, the forms of 
 
     \clearpage
 
+Lenition: *Sèimheachadh*
+------------------------
+
+.. index:: lenition
+
+Lenition is the change in pronunciation through which certain consonants are softened. It is a very characteristic feature of Gaelic and, like slenderising, often denotes important grammatical changes. In the Vocative Case, for example, the first consonant of a name is lenited. This applies to both male and female names, so that *Seumas* becomes *Sheamuis* and *Màiri* becomes *Mhàiri*. Notice that in *Sheamuis* the final vowel has also become slenderised. This is where the Anglicised names such as “Hamish” and “Mhairi” come from, neither of which are strictly correct Gaelic.
+
+Lenition is most commonly shown by adding an **h** to the lenited consonant, as in: *bh*, *ch*, *dh*, *fh*, *gh*, *mh*, *ph*, *sh*, *th*. The letters **l** and **n** can also be lenited but this is not shown in writing.
+
+Whilst the letter **s** on its own can be lenited, it is not lenited when followed by g, m, p or t, so that the following digraphs never lenite: *sg*, *sm*, *sp*, *st*. Lenition on **s** also behaves differently for certain nouns preceded by the definite article, here the **s** becomes **t-s** as in: *an t-Sultain* (September). This is also often determined by whether the word has changed case to become Dative or Genitive.
 
 Slenderising: *Caoileachadh*
 ----------------------------
@@ -162,14 +172,5 @@ https://cuhwc.org.uk/page/unofficial-guide-pronouncing-gaelic
 
     \clearpage
 
-Lenition: *Sèimheachadh*
-------------------------
 
-.. index:: lenition
-
-Lenition is the change in pronunciation through which certain consonants are softened. It is a very characteristic feature of Gaelic and, like slenderising, often denotes important grammatical changes. In the Vocative Case, for example, the first consonant of a name is lenited. This applies to both male and female names, so that *Seumas* becomes *Sheamuis* and *Màiri* becomes *Mhàiri*. Notice that in *Sheamuis* the final vowel has also become slenderised. This is where the Anglicised names such as “Hamish” and “Mhairi” come from, neither of which are strictly correct Gaelic.
-
-Lenition is most commonly shown by adding an **h** to the lenited consonant, as in: *bh*, *ch*, *dh*, *fh*, *gh*, *mh*, *ph*, *sh*, *th*. The letters **l** and **n** can also be lenited but this is not shown in writing.
-
-Whilst the letter **s** on its own can be lenited, it is not lenited when followed by g, m, p or t, so that the following digraphs never lenite: *sg*, *sm*, *sp*, *st*. Lenition on **s** also behaves differently for certain nouns preceded by the definite article, here the **s** becomes **t-s** as in: *an t-Sultain* (September). This is also often determined by whether the word has changed case to become Dative or Genitive.
 
