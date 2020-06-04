@@ -12,6 +12,8 @@ Gaelic Grammar Diagrams
 
    introduction
    spelling
+   nouns_and_gender
+   case
 
 
 
