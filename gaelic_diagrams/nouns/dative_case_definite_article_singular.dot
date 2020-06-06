@@ -1,0 +1,41 @@
+digraph dative_case_definite_article_singular {
+	node [shape = box];
+	/* nodes */
+	START					[label="NOUN", style="rounded, bold"];
+	gender					[label="What is the grammatical gender?", style="rounded"];
+	/* feminine nodes */
+	feminine				[label="Feminine"];
+	follows_nominative		[label="Follows nominative case", style="rounded, bold"];
+	/* masculine nodes */
+	masculine				[label="Masculine"];
+	first_letter_m			[label="What letter group does the word begin with?", style="rounded"];
+	bcgmp_group_m			[label="b c g m p"];
+	bcgmp_article_m			[label=<a' <i>NOUN (lenited)</i>>, style="rounded, bold"];
+	//bcgmp_lenition_m		[label="Lenite."];
+	s_group_m				[label="s\n(except sg, sm, sp, st)"];
+	s_article_m				[label=<an t-<i>NOUN</i>>, style="rounded, bold"];
+	//s_no_lenition_m			[label="Do not lenite."];
+	f_group_m				[label="f"];
+	f_article_m				[label=<an <i>NOUN (lenited)</i>>, style="rounded, bold"];
+	//f_lenition_m			[label="Lenite."];
+	others_group_m			[label="All other letters"];
+	others_article_m		[label=<an <i>NOUN</i>>, style="rounded, bold"];
+	//others_no_lenition_m	[label="Do not lenite."];
+
+	/* graph */
+	START -> gender;
+	/* feminine */
+	gender -> feminine;
+	feminine -> follows_nominative;
+	/* masculine */
+	gender -> masculine;
+	masculine -> first_letter_m;
+	first_letter_m -> bcgmp_group_m -> bcgmp_article_m ;
+	first_letter_m -> s_group_m -> s_article_m;
+	first_letter_m -> f_group_m -> f_article_m;
+	first_letter_m -> others_group_m -> others_article_m;
+
+	/* layout */
+	{rank=same; feminine, masculine}
+	{rank=same; follows_nominative, first_letter_m}
+}

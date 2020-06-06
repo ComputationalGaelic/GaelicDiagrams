@@ -1,19 +1,19 @@
-digraph definite_article_nominative_case_singular {
+digraph nominative_case_definite_article_singular {
 	node [shape = box];
 	/* nodes */
 	START				[label="NOUN", style="rounded, bold"];
-	gender				[label="What is the grammatical gender?"];
+	gender				[label="What is the grammatical gender?", style="rounded"];
 	feminine			[label="Feminine"];
 	masculine			[label="Masculine"];
-	first_letter_f		[label="What letter group does the word begin with?"];
-	first_letter_m		[label="What letter group does the word begin with?"];
-	bfmp_group_m		[label="b, f, m, p"];
-	vowel_group_f		[label="a, e, i, o, u"];
+	first_letter_f		[label="What letter group does the word begin with?", style="rounded"];
+	first_letter_m		[label="What letter group does the word begin with?", style="rounded"];
+	bfmp_group_m		[label="b f m p"];
+	vowel_group_f		[label="a e i o u"];
 	f_group_f		    [label="f"];
-	vowel_group_m		[label="a, e, i, o, u"];
-	consonants_group_m  [label="c, d, g, l, n, r, s, t\n(all other consonants)"];
-	lenition_group		[label="b, c, d, g, m, p, t"];
-	non_lenition_group	[label="l, n, r, sg, sm, sp, st"];
+	vowel_group_m		[label="a e i o u"];
+	consonants_group_m  [label="c d g l n r s t\n(all other consonants)"];
+	lenition_group		[label="b c d g m p t"];
+	non_lenition_group	[label="l n r sg sm sp st"];
 	lenition_s			[label="s\n(allows lenition)"];
 	article_am_m        [label=<am <i>NOUN</i>>, style="rounded, bold"];
 	article_an_m        [label=<an <i>NOUN</i>>, style="rounded, bold"];

@@ -15,7 +15,7 @@ The **genitive case** is used when one noun has a direct relationship to another
 The **vocative case** is used when directly addressing someone by name. The spelling and pronunciation of a name will change when given in the vocative.
 
 
-Each of the cases is described in greater detail below.
+The transformation of a noun across the different cases is most evident when it has the definite article. In it's most general sense, the transformation can be seen as a process of gradual softening as a word changes from nominative to dative and then genitive. The gender of the noun is also significant. Each of the cases is described in greater detail below.
 
 
 Nominative Case: *Tuiseal Ainmneach*
@@ -38,6 +38,35 @@ As the root form of a noun, the nominative is the basis from which words are tra
 
 (diagram showing changes from root)
 
+When taking the definite article, masculine nouns do not change in the nominative case except for those beginning with a vowel. These are preceded by a *t-* in the definite form:
+
+====================== ==========================
+Indefinite             Definite
+====================== ==========================
+*aran* (bread)         *an t-aran* (the bread)
+*eilean* (island)      *an t-eilean* (the island)
+*iasg* (fish)          *an t-iasg* (the fish)
+*òran* (song)          *an t-òran* (the song)
+*ubhal* (apple)        *an t-ubhal* (the apple)
+====================== ==========================
+
+When feminine nouns take the definite article, these all lenite where possible:
+
+====================== ==========================
+Indefinite             Definite
+====================== ==========================
+*bò* (cow)             *a’ bhò* (the cow)
+*cluas* (ear)          *a’ chluas* (the ear)
+*feòil* (meat)         *a’ fheòil* (the meat)
+*gruag* (hair)         *a’ ghruag* (the hair)
+*mil* (honey)          *a’ mhil* (the honey)
+*poit* (pot)           *a’ phoit* (the pot)
+*sùil* (eye)           *a’ shùil* (the eye)
+====================== ==========================
+
+.. graphviz:: ../gaelic_diagrams/nouns/nominative_case_definite_article_singular.dot
+	:caption: Transformation of singular nouns with definite article in the nominative case.
+
 References
 ++++++++++
 
@@ -54,21 +83,24 @@ A noun takes the dative case when it follows a simple preposition. The simple pr
 ===================== =========================
 Gaelic                English
 ===================== =========================
-à                     out of (from a place)
-aig                   at
-air                   on
-ann an                in
-bho                   from someone or something
-de                    of (part of, some of)
-do                    to, for
-fo                    under
-gu                    to, until
-le                    with
-mu                    about
-ri                    against, with
-ro                    before
-tro                   through
+*à*                   out of (from a place)
+*aig*                 at
+*air*                 on
+*ann an*              in
+*bho*                 from someone or something
+*de*                  of (part of, some of)
+*do*                  to, for
+*fo*                  under
+*gu*                  to, until
+*le*                  with
+*mu*                  about
+*ri*                  against, with
+*ro*                  before
+*tro*                 through
 ===================== =========================
+
+.. graphviz:: ../gaelic_diagrams/nouns/dative_case_definite_article_singular.dot
+	:caption: Transformation of singular nouns with definite article in the dative case.
 
 References
 ++++++++++
@@ -104,7 +136,7 @@ Names and nouns beginning with *l*, *n*, and *r* do not show lenition when writt
 
 
 .. graphviz:: ../gaelic_diagrams/nouns/vocative_case.dot
-	:caption: Vocative Case.
+	:caption: Transformation of nouns in the vocative case.
 
 
 References
