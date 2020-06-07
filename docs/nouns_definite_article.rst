@@ -10,7 +10,8 @@ The definite article in Gaelic changes in different contexts depending on the sp
 
 These changes are described in greater detail in the sections that follow.
 
-(diagram)
+.. graphviz:: ../gaelic_diagrams/nouns/definite_article.dot
+	:caption: The definite article.
 
 
 .. rubric:: References

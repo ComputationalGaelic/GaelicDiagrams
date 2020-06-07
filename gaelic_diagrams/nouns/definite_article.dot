@@ -1,0 +1,67 @@
+digraph definite_article {
+	node [shape = box];
+	/* nodes */
+	START					[label="NOUN", style="rounded, bold"];
+	number					[label="Singular or plural?", style="rounded"];
+	singular				[label="Singular"];
+	plural					[label="Plural"];
+	gender					[label="What is the grammatical gender?", style="rounded"];
+	/* feminine nodes */
+	feminine				[label="Feminine"];
+	case_f					[label="What is the case?", style="rounded"];
+	nominative_f			[label="Nominative"];
+	dative_f				[label="Dative"];
+	genitive_f				[label="Genitive"];
+	/* masculine nodes */
+	masculine				[label="Masculine"];
+	case_m					[label="What is the case?", style="rounded"];
+	nominative_m			[label="Nominative"];
+	dative_m				[label="Dative"];
+	genitive_m				[label="Genitive"];
+	/* plural nodes */
+	case_p					[label="What is the case?", style="rounded"];
+	nominative_p			[label="Nominative"];
+	dative_p				[label="Dative"];
+	genitive_p				[label="Genitive"];
+	/* groups */
+	group_1					[label="Group 1"];
+	group_2					[label="Group 2"];
+	group_3					[label="Group 3"];
+	group_4					[label="Group 4"];
+
+	/* graph */
+	START -> number;
+	number -> singular;
+	number -> plural;
+	/* singular */
+	singular -> gender;
+	plural -> case_p;
+	case_p -> nominative_p;
+	case_p -> dative_p;
+	case_p -> genitive_p;
+	nominative_p -> group_3;
+	dative_p -> group_3;
+	genitive_p -> group_4;
+	/* feminine */
+	gender -> feminine;
+	feminine -> case_f;
+	case_f -> nominative_f;
+	case_f -> dative_f;
+	case_f -> genitive_f;
+	nominative_f -> group_2;
+	dative_f -> group_2;
+	genitive_f -> group_3;
+	/* masculine */
+	gender -> masculine;
+	masculine -> case_m;
+	case_m -> nominative_m;
+	case_m -> dative_m;
+	case_m -> genitive_m;
+	nominative_m -> group_1;
+	dative_m -> group_2;
+	genitive_m -> group_2;
+	/* layout */
+	{rank=same; singular, plural}
+	{rank=same; feminine, masculine}
+	{rank=same; case_m, case_f, case_p}
+}
