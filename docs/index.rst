@@ -12,6 +12,7 @@ Gaelic Grammar Diagrams
 
    introduction
    spelling
+   nouns_definite_article
    nouns_grammatical_gender
    nouns_case
 

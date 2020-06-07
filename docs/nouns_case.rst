@@ -67,8 +67,7 @@ Indefinite             Definite
 .. graphviz:: ../gaelic_diagrams/nouns/nominative_case_definite_article_singular.dot
 	:caption: Transformation of singular nouns with definite article in the nominative case.
 
-References
-++++++++++
+.. rubric:: References
 
 https://en.wikipedia.org/wiki/Nominative_case
 
@@ -102,8 +101,7 @@ Gaelic                English
 .. graphviz:: ../gaelic_diagrams/nouns/dative_case_definite_article_singular.dot
 	:caption: Transformation of singular nouns with definite article in the dative case.
 
-References
-++++++++++
+.. rubric:: References
 
 https://en.wikipedia.org/wiki/Dative_case
 
@@ -113,8 +111,7 @@ Genitive Case: *Tuiseal Ginideach*
 
 .. index:: case, genitive
 
-References
-++++++++++
+.. rubric:: References
 
 https://en.wikipedia.org/wiki/Genitive_case
 
@@ -139,7 +136,6 @@ Names and nouns beginning with *l*, *n*, and *r* do not show lenition when writt
 	:caption: Transformation of nouns in the vocative case.
 
 
-References
-++++++++++
+.. rubric:: References
 
 https://en.wikipedia.org/wiki/Vocative_case

@@ -62,8 +62,7 @@ Vowels also appear in *short* and *long* forms. The short form of a vowels is wr
 .. graphviz:: ../gaelic_diagrams/spelling/vowels_long_short.dot
 	:caption: Short vowels and long vowels.
 
-References
-++++++++++
+.. rubric:: References
 
 https://gaelicgrammar.org/~gaelic/mediawiki/index.php/Broad_and_Slender
 
@@ -96,8 +95,7 @@ A smaller distinction lies with the group **b f m p**. When these letters are fo
 .. graphviz:: ../gaelic_diagrams/spelling/consonant_groups.dot
 	:caption: Consonant groups in Gaelic.
 
-References
-++++++++++
+.. rubric:: References
 
 https://en.wikipedia.org/wiki/Scottish_Gaelic_orthography
 
@@ -118,8 +116,7 @@ Gaelic can also be divided up into distinct phoneme groups. These form the most 
 .. graphviz:: ../gaelic_diagrams/spelling/phoneme_groups_consonants.dot
 	:caption: Consonant phoneme groups in Gaelic.
 
-References
-++++++++++
+.. rubric:: References
 
 Ionad Chaluim Chille Ìle (2003). **Gaelic Phonics Study Report**. Stòrlann Nàiseanta Na Gàidhlig.
 
@@ -162,8 +159,7 @@ Words ending with broad vowels will sometimes change to ending with a slender vo
 	:caption: Examples of slenderising.
 
 
-References
-++++++++++
+.. rubric:: References
 
 https://cuhwc.org.uk/page/unofficial-guide-pronouncing-gaelic
 
