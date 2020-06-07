@@ -1,5 +1,7 @@
 digraph definite_article {
+	graph[compound=true];
 	node [shape = box];
+	rankdir=TB;
 	/* nodes */
 	START					[label="NOUN", style="rounded, bold"];
 	number					[label="Singular or plural?", style="rounded"];
@@ -24,10 +26,51 @@ digraph definite_article {
 	dative_p				[label="Dative"];
 	genitive_p				[label="Genitive"];
 	/* groups */
-	group_1					[label="Group 1"];
-	group_2					[label="Group 2"];
-	group_3					[label="Group 3"];
-	group_4					[label="Group 4"];
+	subgraph cluster_0 {
+		vowel_group_1		[label="a e i o u"];
+		ant_group_1			[label=<an t-<i>NOUN</i>>, style="rounded, bold"];
+		bfmp_group_1		[label="b f m p"];
+		am_group_1			[label=<am <i>NOUN</i>>, style="rounded, bold"];
+		others_group_1		[label="All other letters"];
+		an_group_1			[label=<an <i>NOUN</i>>, style="rounded, bold"];
+
+		vowel_group_1 -> ant_group_1;
+		bfmp_group_1 -> am_group_1;
+		others_group_1 -> an_group_1;
+	}
+	subgraph cluster_1 {
+		bcgmp_group_2		[label="b c g m p"];
+		a_group_2			[label=<a' <i>NOUN (lenited)</i>>, style="rounded, bold"];
+		f_group_2			[label="f"];
+		anf_group_2			[label=<an <i>NOUN (lenited)</i>>, style="rounded, bold"];
+		s_group_2			[label="sa se si so su sl sn sr"];
+		ant_group_2			[label=<an t-<i>NOUN</i>>, style="rounded, bold"];
+		others_group_2		[label="All other letters"];
+		an_group_2			[label=<an <i>NOUN</i>>, style="rounded, bold"];
+
+		bcgmp_group_2 -> a_group_2;
+		f_group_2 -> anf_group_2;
+		s_group_2 -> ant_group_2;
+		others_group_2 -> an_group_2;
+	}
+	subgraph cluster_2 {
+		consonants_group_3	[label="Consonants"];
+		na_group_3			[label=<na <i>NOUN</i>>, style="rounded, bold"];
+		vowel_group_3		[label="a e i o u"];
+		nah_group_3			[label=<na h-<i>NOUN</i>>, style="rounded, bold"];
+
+		consonants_group_3 -> na_group_3;
+		vowel_group_3 -> nah_group_3;
+	}
+	subgraph cluster_3 {
+		bfmp_group_4		[label="b f m p"];
+		nam_group_4			[label=<nam <i>NOUN</i>>, style="rounded, bold"];
+		others_group_4		[label="All other letters"];
+		nan_group_4			[label=<nan <i>NOUN</i>>, style="rounded, bold"];
+
+		bfmp_group_4 -> nam_group_4;
+		others_group_4 -> nan_group_4;
+	}
 
 	/* graph */
 	START -> number;
@@ -39,27 +82,27 @@ digraph definite_article {
 	case_p -> nominative_p;
 	case_p -> dative_p;
 	case_p -> genitive_p;
-	nominative_p -> group_3;
-	dative_p -> group_3;
-	genitive_p -> group_4;
+	nominative_p -> consonants_group_3 [lhead=cluster_2];
+	dative_p -> vowel_group_3 [lhead=cluster_2];
+	genitive_p -> bfmp_group_4 [lhead=cluster_3];
 	/* feminine */
 	gender -> feminine;
 	feminine -> case_f;
 	case_f -> nominative_f;
 	case_f -> dative_f;
 	case_f -> genitive_f;
-	nominative_f -> group_2;
-	dative_f -> group_2;
-	genitive_f -> group_3;
+	nominative_f -> s_group_2 [lhead=cluster_1];
+	dative_f -> others_group_2 [lhead=cluster_1];
+	genitive_f -> consonants_group_3 [lhead=cluster_2];
 	/* masculine */
 	gender -> masculine;
 	masculine -> case_m;
 	case_m -> nominative_m;
 	case_m -> dative_m;
 	case_m -> genitive_m;
-	nominative_m -> group_1;
-	dative_m -> group_2;
-	genitive_m -> group_2;
+	nominative_m -> bfmp_group_1 [lhead=cluster_0];
+	dative_m -> bcgmp_group_2 [lhead=cluster_1];
+	genitive_m -> f_group_2 [lhead=cluster_1];
 	/* layout */
 	{rank=same; singular, plural}
 	{rank=same; feminine, masculine}
